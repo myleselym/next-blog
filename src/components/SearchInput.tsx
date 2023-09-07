@@ -38,7 +38,9 @@ const SearchInput: FC<SearchInputProps> = ({ allTags, handleTagClick }) => {
                     absolute top-10 w-[15.1rem] p-2 my-2 max-h-40 bg-white rounded-md
                     outline outline-blue-950  flex flex-col gap-2 overflow-y-auto 
                     ${
-                      inputFocused ? "opacity-100 z-20" : "opacity-0 -z-20"
+                      inputFocused
+                        ? "opacity-100 z-20"
+                        : "opacity-0 pointer-events-none"
                     } transition-opacity duration-1000
                   `}
         >
