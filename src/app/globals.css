@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes slideDown {
+  from {
+    top: -4rem;
+  }
+  to {
+    top: 4rem;
+  }
+}
+
+#search-field.sticky {
+  position: -webkit-sticky; /* for Safari */
+  position: sticky;
+  z-index: 1000; /* Ensure it's above other content */
+}
+#search-field.scrolling-up {
+  animation: slideDown 0.3s ease-in-out forwards;
+}
+
+#search-field::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1; /* ensure it's behind the content */
+}
+
+body,
+#navbar {
+  background-image: url("/triangle-mosaic.png");
+  background-attachment: fixed;
+  background-position: top left;
+  background-size: cover; /* adjust as needed */
+}
+iframe {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  padding-bottom: 10px;
+}
+
+.post-content p[style*="text-align: center;"] iframe {
+  display: block;
+  margin: 0 auto;
+}
