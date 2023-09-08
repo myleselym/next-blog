@@ -15,7 +15,7 @@ const AuthorSection: React.FC<AuthorSectionProps> = ({
 }) => (
   <div
     id="author-section"
-    className="max-lg:-order-1 mx-auto flex items-center justify-self-center justify-start gap-3 cursor-pointer"
+    className="max-lg:-order-1 max-lg:pb-1 mx-auto flex items-center justify-self-center justify-start gap-3 cursor-pointer"
     onClick={onClick}
   >
     <Image

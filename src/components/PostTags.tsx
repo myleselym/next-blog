@@ -4,7 +4,7 @@ type PostTagsProps = {
 };
 
 const PostTags: React.FC<PostTagsProps> = ({ tags, onTagClick }) => (
-  <p className="justify-self-end">
+  <p className="pb-1 justify-self-end">
     {tags.map((tag) => (
       <span
         key={tag}
